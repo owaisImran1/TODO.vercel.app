@@ -1,0 +1,110 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: url('images/space.jpg'), radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 400px 400px, 300% 300%;
+    background-attachment: fixed;
+    color: white;
+    animation: twinkling 10s linear infinite;
+  }
+  
+  @keyframes twinkling {
+    0%, 100% {
+      background-position: 0 0, 0 0;
+    }
+    50% {
+      background-position: 400px 400px, 50% 50%;
+    }
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* ... (rest of your CSS styles) */
+  
+/* Header Styles */
+.bg-space {
+  background-color: transparent;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: "Comic sans MS", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Form Styles */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: border-color 0.2s;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+  border-color: #28a745;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+}
+
+/* Tasks Styles */
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item button {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.text-success {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #28a745;
+}
